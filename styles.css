@@ -54,6 +54,10 @@ header nav ul li a {
     text-align: center;
 }
 
+nav ul li a:hover {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 1); /* Přidání stínování při hoveru */
+}
+
 /* Sekce Služby */
 #services {
     background-color: #fff;
@@ -99,38 +103,43 @@ header nav ul li a {
     padding: 50px 0;
 }
 
-#contact form {
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+#contact .contact-info {
+    list-style: none;
     max-width: 600px;
     margin: 0 auto;
+    padding: 0;
+    text-align: center;
 }
 
-#contact label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+#contact .contact-info li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
 }
 
-#contact input, #contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+#contact .contact-info li a {
+    color: #333;
+    text-decoration: none;
 }
 
-#contact button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+#contact .contact-info li a:hover {
+    text-decoration: underline;
 }
 
-#contact button:hover {
-    background-color: #555;
+#contact .contact-info li strong {
+    color: #000;
 }
 
 /* Patka */
